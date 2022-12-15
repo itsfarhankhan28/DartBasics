@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
+//Practice function code
 String personname(String firstname, String secondname) {
   return '$firstname $secondname';
+}
+
+//Practice Other Concepts of Flutter
+void testCodes() {
+  int a = 10;
+  if (a < 10) {
+    print("Number is less than 10");
+  } else if (a == 10) {
+    print("Number is eqaul to 10");
+  } else {
+    print("Number is greater than 10");
+  }
 }
 
 void main() {
@@ -14,7 +27,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(personname("Farhan", "Khan"));
+    // print(personname("Osama", "Shaikh"));
+    testCodes();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
