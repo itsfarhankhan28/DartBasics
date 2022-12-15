@@ -7,14 +7,18 @@ String personname(String firstname, String secondname) {
 
 //Practice Other Concepts of Flutter
 void testCodes() {
-  int a = 10;
-  if (a < 10) {
-    print("Number is less than 10");
-  } else if (a == 10) {
-    print("Number is eqaul to 10");
-  } else {
-    print("Number is greater than 10");
-  }
+  // int a = 10;
+  // if (a < 10) {
+  //   print("Number is less than 10");
+  // } else if (a == 10) {
+  //   print("Number is eqaul to 10");
+  // } else {
+  //   print("Number is greater than 10");
+  // }
+  var age = 10;
+  var doubleAge = age * 2;
+  var halfAge = age / 2;
+  print(halfAge);
 }
 
 void main() {
