@@ -15,10 +15,51 @@ void testCodes() {
   // } else {
   //   print("Number is greater than 10");
   // }
-  var age = 10;
-  var doubleAge = age * 2;
-  var halfAge = age / 2;
-  print(halfAge);
+  // var age = 10;
+  // var doubleAge = age * 2;
+  // var halfAge = age / 2;
+  // print(halfAge);
+}
+
+void testCodes2() {
+  //lists
+  // var mernlanguages = ['mongo', 'express', 'react', 'node'];
+  // var count = mernlanguages.length;
+  // print(count);
+  // mernlanguages.add('javascript');
+  // print(mernlanguages);
+  // print(mernlanguages[3]);
+
+  //sets
+  // var mernlanguages = {'mongo', 'express', 'react', 'node', 5};
+  // print(mernlanguages);
+  // mernlanguages.add(10);
+  // print(mernlanguages);
+
+  //maps
+  var languages = {
+    'HTML': 'frontend',
+    'CSS': 'frontend',
+    'JS': 'frontend,backend'
+  };
+  print(languages);
+  languages['REACT'] = 'backend';
+  print(languages);
+  var frontendLang = languages.keys;
+  print(frontendLang);
+  var value = languages.values;
+  print(value);
+  var length = languages.length;
+  print(length);
+  var content = languages.keys.first;
+  print(content);
+  languages.addAll({
+    'MONGO': 'Database',
+    'EXPRESS': 'Backend',
+    'REACT': 'backend',
+    'NODE': 'backend'
+  });
+  print(languages);
 }
 
 void main() {
@@ -32,7 +73,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // print(personname("Osama", "Shaikh"));
-    testCodes();
+    // testCodes();
+    testCodes2();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
